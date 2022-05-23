@@ -6,13 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TableLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLinearVertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Linear\nVertical"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnLinearHorizon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Linear\nHorizon"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnConstraint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Constraint"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnGrid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Grid"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnRelative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Relative"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnTable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Table"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnFrame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Frame"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnDrawer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="1dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Drawer"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="8dp"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
