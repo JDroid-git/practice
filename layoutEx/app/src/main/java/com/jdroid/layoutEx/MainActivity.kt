@@ -1,15 +1,16 @@
-package com.jdroid.myapplication
+package com.jdroid.layoutEx
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import com.jdroid.myapplication.databinding.ActivityMainBinding
+import com.jdroid.layoutEx.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private var inflater: LayoutInflater? = null
 
     override fun onClick(v: View?) {
         when(v?.id) {
@@ -51,6 +52,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+
         initListener()
     }
 
@@ -66,7 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setView(layoutId: Int) {
-        val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(layoutId, binding.layout, true)
+        binding.layout.removeAllViews()
+        inflater?.inflate(layoutId, binding.layout, true)
     }
 }

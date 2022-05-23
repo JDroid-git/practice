@@ -1,4 +1,4 @@
-package com.jdroid.myapplication
+package com.jdroid.layoutEx
 
 import org.junit.Test
 

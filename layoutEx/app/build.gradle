@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.jdroid.myapplication"
+        applicationId "com.jdroid.layoutEx"
         minSdk 21
         targetSdk 32
         versionCode 1
