@@ -1,4 +1,4 @@
-package com.jdroid.textview
+package com.jdroid.textViewEx
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.jdroid.textview", appContext.packageName)
+        assertEquals("com.jdroid.textViewEx", appContext.packageName)
     }
 }

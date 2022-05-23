@@ -1,4 +1,4 @@
-package com.jdroid.textview
+package com.jdroid.textViewEx
 
 import org.junit.Test
 

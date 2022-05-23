@@ -1,4 +1,4 @@
-package com.jdroid.textview
+package com.jdroid.textViewEx
 
 import android.os.Build
 import android.os.Bundle
@@ -6,12 +6,9 @@ import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.TypedValue
-import android.view.View
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
-import com.jdroid.textview.databinding.ActivityMainBinding
+import com.jdroid.textViewEx.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), TextWatcher {
 
