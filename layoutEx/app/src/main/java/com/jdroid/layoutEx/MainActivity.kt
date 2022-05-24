@@ -1,10 +1,10 @@
 package com.jdroid.layoutEx
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.jdroid.layoutEx.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -13,21 +13,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var inflater: LayoutInflater? = null
 
     override fun onClick(v: View?) {
-        when(v?.id) {
+        when (v?.id) {
             binding.btnConstraint.id -> {
                 setView(R.layout.view_constraintlayout)
             }
 
-            binding.btnDrawer.id -> {
-
-            }
-
             binding.btnFrame.id -> {
-
+                setView(R.layout.view_framelayout)
             }
 
-            binding.btnGrid.id -> {
+            binding.btnGridHorizontal.id -> {
+                setView(R.layout.view_gridlayout_horizontal)
+            }
 
+            binding.btnGridVertical.id -> {
+                setView(R.layout.view_gridlayout_vertical)
             }
 
             binding.btnLinearHorizon.id -> {
@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             binding.btnRelative.id -> {
-
+                setView(R.layout.view_relativelayout)
             }
 
             binding.btnTable.id -> {
-
+                setView(R.layout.view_tablelayout)
             }
         }
     }
@@ -59,9 +59,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun initListener() {
         binding.btnConstraint.setOnClickListener(this)
-        binding.btnDrawer.setOnClickListener(this)
         binding.btnFrame.setOnClickListener(this)
-        binding.btnGrid.setOnClickListener(this)
+        binding.btnGridVertical.setOnClickListener(this)
+        binding.btnGridHorizontal.setOnClickListener(this)
         binding.btnLinearHorizon.setOnClickListener(this)
         binding.btnLinearVertical.setOnClickListener(this)
         binding.btnRelative.setOnClickListener(this)

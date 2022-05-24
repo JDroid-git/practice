@@ -49,26 +49,26 @@
                 app:autoSizeTextType="uniform" />
 
             <Button
-                android:id="@+id/btnConstraint"
+                android:id="@+id/btnGridVertical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
                 android:layout_weight="1"
                 android:maxLines="2"
-                android:text="Constraint"
+                android:text="Grid\nVertical"
                 app:autoSizeMaxTextSize="14dp"
                 app:autoSizeMinTextSize="8dp"
                 app:autoSizeStepGranularity="1dp"
                 app:autoSizeTextType="uniform" />
 
             <Button
-                android:id="@+id/btnGrid"
+                android:id="@+id/btnGridHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
                 android:layout_weight="1"
                 android:maxLines="2"
-                android:text="Grid"
+                android:text="Grid\nHorizontal"
                 app:autoSizeMaxTextSize="14dp"
                 app:autoSizeMinTextSize="8dp"
                 app:autoSizeStepGranularity="1dp"
@@ -117,13 +117,13 @@
                 app:autoSizeTextType="uniform" />
 
             <Button
-                android:id="@+id/btnDrawer"
+                android:id="@+id/btnConstraint"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="1dp"
                 android:layout_weight="1"
                 android:maxLines="2"
-                android:text="Drawer"
+                android:text="Constraint"
                 app:autoSizeMaxTextSize="14dp"
                 app:autoSizeMinTextSize="8dp"
                 app:autoSizeStepGranularity="1dp"
