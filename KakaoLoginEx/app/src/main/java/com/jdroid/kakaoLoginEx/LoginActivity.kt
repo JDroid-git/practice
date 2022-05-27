@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         if (error != null) {
             Log.e(Constants.TAG, "로그인 실패 $error")
         } else if (token != null) {
-            Log.e(Constants.TAG, "로그인 성공 ${token.accessToken}")
+            Log.d(Constants.TAG, "로그인 성공 ${token.accessToken}")
             nextMainActivity()
         }
     }
@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                                 UserApiClient.instance.loginWithKakaoAccount(this, callback = mCallback)
                             }
                         } else if (token != null) {
-                            Log.e(Constants.TAG, "로그인 성공 ${token.accessToken}")
+                            Log.d(Constants.TAG, "로그인 성공 ${token.accessToken}")
                             Toast.makeText(this, "로그인 성공!", Toast.LENGTH_SHORT).show()
                             nextMainActivity()
                         }

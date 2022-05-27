@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             if (error != null) {
                 Log.e(Constants.TAG, "사용자 정보 요청 실패 $error")
             } else if (user != null) {
-                Log.e(Constants.TAG, "사용자 정보 요청 성공 : $user")
+                Log.d(Constants.TAG, "사용자 정보 요청 성공 : $user")
                 binding.txtNickName.text = user.kakaoAccount?.profile?.nickname
                 binding.txtAge.text = user.kakaoAccount?.ageRange.toString()
                 binding.txtEmail.text = user.kakaoAccount?.email
